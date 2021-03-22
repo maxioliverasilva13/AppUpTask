@@ -1,0 +1,16 @@
+extends layout
+include mixings/createProyect
+block contenido
+    .contenido-principal
+        h1= namePage
+
+
+        if errores
+            each error in errores
+                .alerta.error= error.texto
+        +createProyect(proyecto)
+
+    pre
+        
+
+        
