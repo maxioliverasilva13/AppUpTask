@@ -20,7 +20,7 @@ require('./model/tareas')
 require("./model/usuarios")
 //authenticate() solo se conecta y sync ejecuta el modelo
 db.sync()
-.then( () => console.log("Conectado Al Server"))
+.then( () => console.log("Conectado Al Servidor"))
 .catch(error => console.log(error));
 app.use(bodyParser.urlencoded({extended:true}))
 //LE DIGO EN donde estan las vistas
